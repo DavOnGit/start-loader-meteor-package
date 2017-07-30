@@ -1,6 +1,6 @@
 # Start-Loader
- Show a centered loading spinner while application is downloading: [like this!](https://codepen.io/Daviz/full/JJQodN/)
-
+ Show a centered loading spinner while application is downloading: <a href="https://codepen.io/Daviz/full/JJQodN/" target="_blank">like this!</a>
+ 
 ## Install
 
 `meteor add daviz:start-loader`

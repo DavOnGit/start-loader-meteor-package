@@ -1,28 +1,27 @@
 <div id="inject-loader-wrapper">
 <style type="text/css">
-.showbox {
-  background-color: #ffffff;
-}
-.showbox {
+
+.start-loader-showbox {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  background-color: #ffffff;
 }
-.loader {
+.start-loader-loader {
   position: relative;
   width: 100px;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
-.loader:before {
+.start-loader-loader:before {
   content: '';
   display: block;
   padding-top: 100%;
 }
-.circular {
+.start-loader-circular {
   -webkit-animation: rotate 2s linear infinite;
           animation: rotate 2s linear infinite;
   height: 100%;
@@ -36,21 +35,21 @@
   right: 0;
   margin: auto;
 }
-.path {
+.start-loader-path {
   stroke-dasharray: 1,200;
   stroke-dashoffset: 0;
   -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
           animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
   stroke-linecap: round;
 }
-.path-2 {
+.start-loader-path-2 {
   stroke-dasharray: 1,200;
   stroke-dashoffset: 0;
   -webkit-animation: dash 3s ease-in-out infinite, color 8s ease-in-out infinite;
           animation: dash 3s ease-in-out infinite, color 8s ease-in-out infinite;
   stroke-linecap: round;
 }
-.path-3 {
+.start-loader-path-3 {
   stroke-dasharray: 1,200;
   stroke-dashoffset: 0;
   -webkit-animation: dash 4.5s ease-in-out infinite, color 12s ease-in-out infinite;
@@ -126,12 +125,12 @@
   }
 }
 </style>
-<div class="showbox">
-  <div class="loader">
-    <svg class="circular" viewBox="25 25 50 50">
-      <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
-      <circle class="path-2" cx="50" cy="50" r="15" fill="none" stroke-width="2" stroke-miterlimit="10"/>
-      <circle class="path-3" cx="50" cy="50" r="10" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+<div class="start-loader-showbox">
+  <div class="start-loader-loader">
+    <svg class="start-loader-circular" viewBox="25 25 50 50">
+      <circle class="start-loader-path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+      <circle class="start-loader-path-2" cx="50" cy="50" r="15" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+      <circle class="start-loader-path-3" cx="50" cy="50" r="10" fill="none" stroke-width="2" stroke-miterlimit="10"/>
     </svg>
   </div>
 </div>
